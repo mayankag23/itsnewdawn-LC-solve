@@ -42,8 +42,9 @@ public:
                                 
                                 // Crucial step: Mark as visited IMMEDIATELY before pushing to queue 
                                 // to prevent the same cell from being added multiple times!
-                                grid[newrow][newcol] = 0; 
                                 q.push({newrow, newcol});
+                                grid[newrow][newcol] = 0; 
+                                // q.push({newrow, newcol});
                             }
                         }
                     }
