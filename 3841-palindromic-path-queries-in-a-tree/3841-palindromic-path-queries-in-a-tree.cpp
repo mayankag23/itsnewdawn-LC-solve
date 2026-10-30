@@ -39,7 +39,7 @@ public:
             g[e[0]].push_back(e[1]);
             g[e[1]].push_back(e[0]);
         }
-
+        // dfs(itn i, 0,  o f )
         int LOG = 32 - __builtin_clz(n);
         vector<vector<int>> fa(n, vector<int>(LOG));
         vector<int> dep(n), l(n), r(n);
